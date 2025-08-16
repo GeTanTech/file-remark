@@ -1,0 +1,8 @@
+{
+  "test": {
+    "description": "🚀测试文件"
+  },
+  "package.json": {
+    "description": "项目配置"
+  }
+}

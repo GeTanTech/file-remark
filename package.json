@@ -1,0 +1,70 @@
+{
+  "name": "file-remark",
+  "displayName": "文件(夹)装饰",
+  "description": "为文件和文件夹添加备注(装饰)，在资源管理器中显示文件描述",
+  "version": "0.0.2",
+  "icon": "media/icons.png",
+  "publisher": "GeTanTech",
+  "author": {
+    "name": "GeTanTech",
+    "email": "cutecode@sina.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeTanTech/file-remark.git"
+  },
+  "homepage": "https://github.com/GeTanTech/file-remark#readme",
+  "bugs": {
+    "url": "https://github.com/GeTanTech/file-remark/issues"
+  },
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "file",
+    "remark",
+    "note",
+    "description",
+    "decoration",
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "file-remark.addremark",
+        "title": "File Remark",
+        "icon": {
+          "light": "media/edit.svg",
+          "dark": "media/edit.svg"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {
+    "ufo": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.102.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.32.0",
+    "vsce": "^3.0.0"
+  }
+}
